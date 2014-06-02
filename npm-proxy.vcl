@@ -141,7 +141,7 @@ sub vcl_pipe {
 import rewrite;
 sub vcl_deliver {
   if (resp.http.content-type ~ "application/json") {
-    rewrite.rewrite_re({"tarball":"http(s)?://[^/]+/"},{"tarball":"http://npm.clockte.ch/"});
+    rewrite.rewrite_re({"tarball":"http(s)?://[^/]+/"},{"tarball":"http://npm.example.com/"}); # CHANGE THIS ADDRESS TO THE NAME OF YOUR PROXY
   }
 }
 

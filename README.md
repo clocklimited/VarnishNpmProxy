@@ -5,6 +5,7 @@
 * Varnish 3.x
 * Compile and install libvmod-rewrite
   * https://github.com/aivarsk/libvmod-rewrite
+* Change line 144 to use the name of your varnish instance.
 
 ## Suggested Varnish Options
 
